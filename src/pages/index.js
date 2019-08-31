@@ -1,9 +1,9 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Offer from "../components/Offer"
-import Requirements from "../components/Requirements"
-import Contact from "../components/Contact"
+import Offer from "../components/offer"
+import Requirements from "../components/requirements"
+import Contact from "../components/contact"
 import SEO from "../components/seo"
 
 import 'uikit/dist/css/uikit.min.css';
