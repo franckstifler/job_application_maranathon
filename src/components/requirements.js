@@ -4,7 +4,7 @@ import React from "react"
 const Requirements = () => {
   return (
     <div id="requirements">
-      <h3 className="uk-heading-bullet">File consitution</h3>
+      <h3 className="uk-heading-bullet">File constitution</h3>
       <ul className="uk-list uk-list-bullet">
         <li>An application for a job address to the management board of the clinic</li>
         <li>Photocopy of the ID card</li>

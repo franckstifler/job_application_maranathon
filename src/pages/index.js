@@ -22,9 +22,9 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Maranathon Beauty Clinic" />
         <div className="uk-text-uppercase uk-text-center">
-          <img style={{ height: 300, width: "auto" }} src="/images/maranathon.jpg" alt="Maranathon Beauty Clinic image" />
+          <img style={{ height: 300, width: "auto" }} src="/images/maranathon.jpg" alt="Maranathon Beauty Clinic" />
           <h1 className="uk-margin-top uk-heading-line uk-text-uppercase"><span>Maranathon Beauty Clinic</span></h1>
           <p className="uk-text-lead">Douala - Yaounde - Bamenda - Bafoussam</p>
         </div>
