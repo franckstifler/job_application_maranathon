@@ -1,21 +1,39 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Offer from "../components/Offer"
+import Requirements from "../components/Requirements"
+import Contact from "../components/Contact"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+import 'uikit/dist/css/uikit.min.css';
+// import 'uikit/dist/js/uikit.min.js';
+
+class IndexPage extends React.Component {
+
+  componentDidMount() {
+    import("uikit/dist/js/uikit")
+      .then((uikit) => {
+        this.uikit = uikit;
+      })
+      .catch((error) => console.error(error));
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEO title="Home" />
+        <div className="uk-text-uppercase uk-text-center">
+          <img style={{ height: 300, width: "auto" }} src="/images/maranathon.jpg" alt="Maranathon Beauty Clinic image" />
+          <h1 className="uk-margin-top uk-heading-line uk-text-uppercase"><span>Maranathon Beauty Clinic</span></h1>
+          <p className="uk-text-lead">Douala - Yaounde - Bamenda - Bafoussam</p>
+        </div>
+        <Offer />
+        <Requirements />
+        <Contact />
+      </Layout>
+    )
+  }
+}
 
 export default IndexPage
